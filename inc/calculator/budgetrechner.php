@@ -1,0 +1,3 @@
+<div class="calculators_body">
+    <iframe src="https://promised-land-ug.drklein-plattform.de/apps/budget-calculator/5b75cd0a-14b2-4fb8-9f2b-b58671761102" title="Budgetrechner" frameborder="0" style="width: 100%; min-height: 900px;" onload="window.addEventListener('message', function (event) {if(event?.data?.type === 'drk-rechner.iframe.resized' && event.data.data.id === 'budget-calculator') {this.style.height = event.data.data.height + 'px'; this.style.minHeight = 0;}}.bind(this))"></iframe>
+</div>

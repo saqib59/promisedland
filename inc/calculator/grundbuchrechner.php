@@ -1,0 +1,3 @@
+<div class="calculators_body">
+    <iframe src="https://promised-land-ug.drklein-plattform.de/apps/land-register-calculator/373059a1-848b-4e23-ab24-88b114aad8c1" title="Grundbuchrechner" frameborder="0" style="width: 100%; min-height: 900px;" onload="window.addEventListener('message', function (event) {if(event?.data?.type === 'drk-rechner.iframe.resized' && event.data.data.id === 'land-register-calculator') {this.style.height = event.data.data.height + 'px'; this.style.minHeight = 0;}}.bind(this))"></iframe>
+</div>

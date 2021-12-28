@@ -1,0 +1,82 @@
+RewriteEngine On
+
+# Public Pages
+RewriteRule ^home/?$ ./home.php
+RewriteRule ^search/?$ ./search.php
+RewriteRule ^packages/?$ ./packages.php
+
+RewriteRule ^consultant/?$ ./consultant.php
+RewriteRule ^consulting/?$ ./consulting.php
+RewriteRule ^seminar/?$ ./seminar.php
+RewriteRule ^portal/?$ ./portal.php
+RewriteRule ^priseatlas/?$ ./priseatlas.php
+RewriteRule ^immomanager/?$ ./immomanager.php
+RewriteRule ^webinar/?$ ./webinar.php
+
+RewriteRule ^contact/?$ ./contact.php
+RewriteRule ^faq/?$ ./faq.php
+RewriteRule ^disclaimer/?$ ./disclaimer.php
+RewriteRule ^imprint/?$ ./imprint.php
+
+# Finance
+RewriteRule ^finance/?$ ./finance.php
+RewriteRule ^advisor/?$ ./advisor.php
+RewriteRule ^calculator/?$ ./calculator.php
+
+# Blog
+RewriteRule ^process/?$ ./process.php
+RewriteRule ^blog/?$ ./blog.php
+RewriteRule ^article/([A-Za-z0-9-]+)/?$ ./views/article.php?id=$1
+
+# Listings
+RewriteRule ^listing/([A-Za-z0-9-]+)/?$ ./views/listing.php?label=$1
+
+# Courses
+RewriteRule ^courses/?$ ./videos.php
+RewriteRule ^courses/([A-Za-z0-9-]+)/?$ ./views/course.php?slug=$1
+RewriteRule ^courses/view/([A-Za-z0-9-]+)/?$ ./views/video.php?slug=$1
+RewriteRule ^course/purchase/?$ ./views/purchase.php
+RewriteRule ^course/payment/?$ ./views/payment.php
+
+# User
+RewriteRule ^user/register/?$ ./user/register.php
+RewriteRule ^user/login/?$ ./user/login.php
+RewriteRule ^user/logout/?$ ./user/logout.php
+RewriteRule ^user/reset/?$ ./user/reset.php
+RewriteRule ^user/confirm/?$ ./user/confirm.php
+
+# User Premium
+RewriteRule ^user/checkout/?$ ./user/checkout.php
+RewriteRule ^user/choose/?$ ./user/choose.php
+RewriteRule ^user/payment/?$ ./user/payment.php
+
+# User Dashboard
+RewriteRule ^user/?$ ./user/index.php
+RewriteRule ^user/favourite/?$ ./user/favourite.php
+RewriteRule ^user/feedback/?$ ./user/feedback.php
+RewriteRule ^user/manage/?$ ./user/manage.php
+RewriteRule ^user/questions/?$ ./user/questions.php
+RewriteRule ^user/request/?$ ./user/request.php
+RewriteRule ^user/courses/?$ ./user/courses.php
+RewriteRule ^user/seminar/?$ ./user/seminar.php
+RewriteRule ^user/consulting/?$ ./user/consulting.php
+RewriteRule ^user/subscription/?$ ./user/subscription.php
+
+# User Settings
+RewriteRule ^user/change_details/?$ ./user/change_details.php
+RewriteRule ^user/change_credentials/?$ ./user/change_credentials.php
+RewriteRule ^user/delete_account/?$ ./user/delete_account.php
+
+ErrorDocument 400 /error.php
+ErrorDocument 401 /error.php
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+Options All -Indexes
+IndexIgnore *

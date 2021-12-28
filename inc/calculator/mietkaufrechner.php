@@ -1,0 +1,3 @@
+<div class="calculators_body">
+    <iframe src="https://promised-land-ug.drklein-plattform.de/apps/rent-or-buy-calculator/925ead23-6ac5-4c9a-8478-1c08da26e46d" title="Mietkaufrechner" frameborder="0" style="width: 100%; min-height: 900px;" onload="window.addEventListener('message', function (event) {if(event?.data?.type === 'drk-rechner.iframe.resized' && event.data.data.id === 'rent-or-buy-calculator') {this.style.height = event.data.data.height + 'px'; this.style.minHeight = 0;}}.bind(this))"></iframe>
+</div>

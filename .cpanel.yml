@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/diybates/promised.alcaline.lk/
+    - /bin/cp -R * $DEPLOYPATH
